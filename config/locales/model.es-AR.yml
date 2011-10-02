@@ -1,0 +1,12 @@
+es-AR:
+  activerecord:
+    attributes:
+      contrato:
+        ncuotas: 'Numero de cuotas'
+        cuota_cents: 'Cuota'
+        cuota_currency: 'Moneda'
+      lote:
+        ncuotas: 'Numero de cuotas'
+        monto_cents: 'Cuota'
+        monto_currency: 'Moneda'
+
