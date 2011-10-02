@@ -12,6 +12,7 @@ group :assets do
   gem 'uglifier'
   gem "compass", "~> 0.12.alpha.0"
 end
+gem 'rack', '1.3.3'
 
 gem 'rails-i18n'
 gem 'cancan'
