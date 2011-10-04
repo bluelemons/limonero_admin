@@ -20,11 +20,11 @@ gem 'cancan'
 gem 'therubyracer'
 gem 'activeadmin',"0.3.2"
 gem 'jquery-rails'
-
+gem "paper_trail"
 # paginacion
 gem 'kaminari'
 # busqueda
-gem "meta_search","~> 1.1.x"
+gem "meta_search"
 # formularios
 gem 'formtastic', "<= 1.2.4"
 # tablas
