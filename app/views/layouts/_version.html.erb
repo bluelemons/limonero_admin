@@ -1,0 +1,31 @@
+
+<h3>Version actual: <%= @versions.length %></h3>
+
+<b>Fecha:</b>
+<%= @versions.last.created_at%>
+<br>
+<b>Usuario</b>: <%= @versions.last.whodunnit %>
+<br>
+
+<br>
+
+
+<% if @versions.length.to_i > 1 %>
+  <% if params[:version].to_i > 1 || !params[:version] %>
+    <%= link_to "Ver version anterior", {:version => (params[:version] || @person.versions.length).to_i - 1}%>
+    <br>
+  <% end %>
+  <% if params[:version] %>
+    <h3>Esta viendo la version <%= "#{params[:version]}"%></h3>
+
+    <b>Fecha:</b>
+    <%= @person.updated_at %>
+    <br>
+    <b>Usuario</b>:
+    <%= @versions[(params[:version].to_i - 1)].whodunnit %>
+    <br>
+
+    <%= link_to "Ver version actual"%>
+  <% end %>
+<% end %>
+
