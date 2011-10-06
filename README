@@ -5,6 +5,11 @@ configuration:
 database.yml, config/database.yml
 mailer, config/environment/production.rb or config/environment/development.rb
 
+install paper_trail
+bundle exec rails generate paper_trail:install
+
 Migrations:
 rake db:create
 rake db:migrate
+
+
