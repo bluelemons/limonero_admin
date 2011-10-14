@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  lote_id: 1
+  ncuotas: 1
+  cuota: 9.99
+  couta_inicial: 9.99
+  interes: 9.99
+  observaiones: MyText
+
+two:
+  lote_id: 1
+  ncuotas: 1
+  cuota: 9.99
+  couta_inicial: 9.99
+  interes: 9.99
+  observaiones: MyText

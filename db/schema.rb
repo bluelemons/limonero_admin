@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111006151034) do
+ActiveRecord::Schema.define(:version => 20111006005648) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -49,6 +49,54 @@ ActiveRecord::Schema.define(:version => 20111006151034) do
   create_table "admin_users_roles", :id => false, :force => true do |t|
     t.integer  "admin_user_id"
     t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "compradores", :id => false, :force => true do |t|
+    t.integer "person_id"
+    t.integer "contrato_id"
+  end
+
+  create_table "contratos", :force => true do |t|
+    t.date     "inicio"
+    t.integer  "lote_id"
+    t.integer  "ncuotas"
+    t.decimal  "cuota",         :precision => 10, :scale => 2
+    t.decimal  "cuota_inicial", :precision => 10, :scale => 2
+    t.decimal  "interes",       :precision => 6,  :scale => 3
+    t.text     "observaciones"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "loteos", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lotes", :force => true do |t|
+    t.integer  "loteo_id"
+    t.string   "manzana"
+    t.string   "parcela"
+    t.string   "partida"
+    t.integer  "ncuotas"
+    t.decimal  "cuota",         :precision => 10, :scale => 2
+    t.decimal  "cuota_inicial", :precision => 10, :scale => 2
+    t.decimal  "interes",       :precision => 6,  :scale => 4
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pagos", :force => true do |t|
+    t.integer  "contrato_id"
+    t.decimal  "monto",       :precision => 7, :scale => 2
+    t.decimal  "recargo",     :precision => 7, :scale => 2
+    t.decimal  "tasa",        :precision => 7, :scale => 2
+    t.decimal  "api",         :precision => 7, :scale => 2
+    t.decimal  "otro",        :precision => 7, :scale => 2
+    t.date     "fecha"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -122,3 +170,4 @@ ActiveRecord::Schema.define(:version => 20111006151034) do
   add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
 
 end
+

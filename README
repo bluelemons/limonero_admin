@@ -1,3 +1,5 @@
+Proyecto Alborada
+
 download:
 git clone git@github.com:olvap/my_active_admin.git
 
@@ -11,5 +13,4 @@ bundle exec rails generate paper_trail:install
 Migrations:
 rake db:create
 rake db:migrate
-
 

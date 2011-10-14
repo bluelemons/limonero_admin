@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  contrato_id: 1
+  monto: 9.99
+  monto: 9.99
+  tasa: 9.99
+  api: 9.99
+  otro: 9.99
+  fecha: 2011-10-05
+
+two:
+  contrato_id: 1
+  monto: 9.99
+  monto: 9.99
+  tasa: 9.99
+  api: 9.99
+  otro: 9.99
+  fecha: 2011-10-05

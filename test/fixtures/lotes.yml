@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  loteo_id: 
+  manzana: MyString
+  parcela: MyString
+  partida: MyString
+  ncuotas: 1
+  cuota: 9.99
+  cuota_inicial: 9.99
+  interes: 9.99
+
+two:
+  loteo_id: 
+  manzana: MyString
+  parcela: MyString
+  partida: MyString
+  ncuotas: 1
+  cuota: 9.99
+  cuota_inicial: 9.99
+  interes: 9.99
