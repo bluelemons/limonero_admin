@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111006005648) do
+ActiveRecord::Schema.define(:version => 20111014154851) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -87,6 +87,9 @@ ActiveRecord::Schema.define(:version => 20111006005648) do
     t.decimal  "interes",       :precision => 6,  :scale => 4
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cuenta"
+    t.string   "plano"
+    t.string   "lote"
   end
 
   create_table "pagos", :force => true do |t|
@@ -170,4 +173,3 @@ ActiveRecord::Schema.define(:version => 20111006005648) do
   add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
 
 end
-

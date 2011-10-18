@@ -8,7 +8,9 @@ class Contrato < ActiveRecord::Base
   attr_reader :compradores_tokens
 
 #  validates :compradores, :presence => true
-  validates :cuota, :presence => true
+
+#  validates :cuota, :presence => true
+
   def compradores_tokens=(ids)
     self.compradore_ids = ids.split(",")
   end
